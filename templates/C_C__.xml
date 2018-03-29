@@ -1,0 +1,115 @@
+<templateSet group="C/C++">
+  <template name="c" value="const" description="const" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
+  <template name="cr" value="const&amp;" description="const&amp;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
+  <template name="cp" value="const*" description="const*" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
+  <template name="inc&lt;" value="#include &lt;$PATH$&gt;$END$" description="#include &lt;&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="po" value="#pragma once" description="#pragma once" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="pv" value="virtual $RETURN_TYPE$ $NAME$($ARGS$);$END$" description="pure virtual function declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="RETURN_TYPE" expression="" defaultValue="void" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
+    </context>
+  </template>
+  <template name="sts" value="std::string" description="std::string" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_EXPRESSION_CPP" value="false" />
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="vec" value="std::vector&lt;$TYPE$&gt;$END$" description="std::vector" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="cout" value="std::cout &lt;&lt; $STRING$ &lt;&lt; std::endl;$END$" description="std::cout &lt;&lt; &quot;&quot; &lt;&lt; std::endl;" toReformat="false" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
+  <template name="cerr" value="std::cerr &lt;&lt; $STRING$ &lt;&lt; std::endl;$END$" description="std::cerr &lt;&lt; &quot;&quot; &lt;&lt; std::endl;" toReformat="false" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
+  <template name="cls" value="class $CLASS_NAME$ $MODIFIERS${&#10;    $CONSTRUCTOR$($CONSTRUCTOR_ARGS$) {}&#10;    virtual ~$DESTRUCTOR$() {}&#10;};" description="class" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODIFIERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONSTRUCTOR" expression="" defaultValue="CLASS_NAME" alwaysStopAt="false" />
+    <variable name="CONSTRUCTOR_ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESTRUCTOR" expression="" defaultValue="CLASS_NAME" alwaysStopAt="false" />
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
+    </context>
+  </template>
+  <template name="coutb" value="std::cout &lt;&lt; std::boolalpha &lt;&lt; $STRING$ &lt;&lt; std::endl;$END$" description="std::cout &lt;&lt; std::boolalpha &lt;&lt; &quot;&quot; &lt;&lt; std::endl;" toReformat="false" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
+  <template name="couth" value="std::cout &lt;&lt; std::hex &lt;&lt; $STRING$ &lt;&lt; std::endl;$END$" description="std::cout &lt;&lt; std::hex &lt;&lt; &quot;&quot; &lt;&lt; std::endl;" toReformat="false" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
+  <template name="umap" value="std::unordered_map&lt;$TYPE$&gt;$END$" description="std::unordered_map" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="map" value="std::map&lt;$TYPE$&gt;$END$" description="std::map" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="inc" value="#include &quot;$PATH$&quot;$END$" description="#include &quot;&quot;" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="set" value="std::set&lt;$TYPE$&gt;$END$" description="std::set" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="uset" value="std::unordered_set&lt;$TYPE$&gt;$END$" description="std::unordered_set" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+</templateSet>

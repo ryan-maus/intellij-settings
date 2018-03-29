@@ -1,0 +1,60 @@
+<application>
+  <component name="AppInspectionProfilesVisibleTreeState">
+    <entry key="Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>C/C++</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="CPPToolchains" version="2">
+    <toolchains detectedVersion="5">
+      <toolchain name="Default" useCustomCMake="false" debuggerKind="BUNDLED_GDB" />
+    </toolchains>
+    <debuggers />
+  </component>
+  <component name="CppNewDialogSettings">
+    <option name="addNewFilesToProject" value="false" />
+  </component>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/bin/node" />
+  </component>
+  <component name="OCNewClassSettings">
+    <option name="mySkipAddingToTheProject" value="true" />
+  </component>
+  <component name="PyTestFrameworkService">
+    <option name="SDK_TO_PYTEST">
+      <map>
+        <entry key="/usr/bin/python" value="false" />
+        <entry key="/usr/bin/python2.6" value="false" />
+        <entry key="/usr/local/python2.7/bin/python2.7" value="false" />
+      </map>
+    </option>
+    <option name="SDK_TO_NOSETEST">
+      <map>
+        <entry key="/usr/bin/python" value="true" />
+        <entry key="/usr/bin/python2.6" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnApplicationSettings">
+    <option name="myCheckoutURLs">
+      <list>
+        <option value="http://svnglobal.site.optiver.com/repos/main/chicago/MarketLinks/cpp/ct_cme/branches/ryamau_builder_20150806_1042" />
+      </list>
+    </option>
+    <option name="myTypedURLs">
+      <list>
+        <option value="http://svnglobal.site.optiver.com/repos/main/chicago/MarketLinks/cpp/ct_cme/branches/ryamau_builder_20150806_1042" />
+      </list>
+    </option>
+  </component>
+</application>
